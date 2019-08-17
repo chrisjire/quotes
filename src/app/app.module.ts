@@ -10,6 +10,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { from } from 'rxjs';
+import { DateCountPipe } from './date-count.pipe';
 
 
 
@@ -20,6 +21,7 @@ import { from } from 'rxjs';
     QuoteComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
+    DateCountPipe,
 
     
   ],
