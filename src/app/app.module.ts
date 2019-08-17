@@ -11,6 +11,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { from } from 'rxjs';
 import { DateCountPipe } from './date-count.pipe';
+import { LikeDirective } from './like.directive';
 
 
 
@@ -22,6 +23,7 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteDetailComponent,
     QuoteFormComponent,
     DateCountPipe,
+    LikeDirective,
 
     
   ],
