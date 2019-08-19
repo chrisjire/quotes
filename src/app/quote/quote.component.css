@@ -1,0 +1,25 @@
+.jumbotron{
+width: 400px;
+padding: 20px;
+margin-bottom: 30px;
+float: left;
+color: white;
+}
+.jumbotron:nth-child(6n-5) {
+background-color: #0088ff;
+}
+.jumbotron:nth-child(6n-4) {
+background-color: #ffaa00;
+}
+.jumbotron:nth-child(6n-3) {
+background-color: #ff7700;
+}
+.jumbotron:nth-child(6n-2) {
+background-color: #ff0033;
+}
+.jumbotron:nth-child(6n-1) {
+background-color: #9911aa;
+}
+.jumbotron:nth-child(6n+0) {
+background-color: #5ebd3e;
+}

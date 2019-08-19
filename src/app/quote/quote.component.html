@@ -3,10 +3,11 @@
     <hr>
     <div class="row">
         <div class="col-md-6">
-        <div *ngFor='let quote of quotes;let i = index'>
-            <li>{{quote.name}}</li>
+        <div *ngFor='let quote of quotes;let i = index' class="jumbotron jumbotron-fluid">
+            <li appHighlight>{{quote.name}}</li>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Show Author</button>
-            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+            
+            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)' [quote]="sortedQuote(i)"></app-quote-detail>
         </div>
     </div>
     <div class="col-md-6">

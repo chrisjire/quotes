@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './like.component.html',
   styleUrls: ['./like.component.css']
 })
-export class LikeComponent {
+export class LikeComponent implements OnInit{
 
   numberOfLikes : number = 0;
   
