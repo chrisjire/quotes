@@ -9,11 +9,11 @@ export class LikeComponent implements OnInit{
 
   numberOfLikes : number = 0;
   
-  likeButtonClick() {
+  likeButtonClick(voteUp) {
     this.numberOfLikes++;
   }
 
-  dislikeButtonClick() {
+  dislikeButtonClick(downVote) {
     this.numberOfLikes--;
   }
 
