@@ -8,15 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class LikeComponent implements OnInit{
 
   numberOfLikes : number = 0;
+  quote: any;
   
-  likeButtonClick(voteUp) {
+  likeButtonClick() {
     this.numberOfLikes++;
   }
 
-  dislikeButtonClick(downVote) {
+  dislikeButtonClick() {
     this.numberOfLikes--;
   }
 
+  voteUp(id:number){
+    this.quote[id].upVote()
+
+  }
+  voteDown(id:number){
+    this.quote[id].downVote()
+
+  }
   constructor() { }
 
   ngOnInit() {
